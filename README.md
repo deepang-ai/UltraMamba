@@ -25,5 +25,8 @@ Performance comparative analysis of different network architectures for breast l
 ![Visualization](./figures/fig_benchmark.png)
 
 
-
+# Visualization
+Error map visualizations of the UltraMamba and baseline methods in the MUB2025 datasets. The correct segmentation
+position and the incorrect or missing portion of the detection are in green and red, respectively.
+![Visualization](./figures/fig_errormap.png)
  
