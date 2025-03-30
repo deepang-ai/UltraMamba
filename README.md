@@ -14,6 +14,11 @@ Challenge: Breast Tumor Segmentation Challenge
 
 The dataset will be publicly released within one week of paper acceptance.
 
+# Benchmark
+Performance comparative analysis of different network architectures for breast lesion segmentation in the MUB2025 dataset.
+![Visualization](./figures/fig_benchmark.png)
+
+
 # Visualization
 
 ![Visualization](./figures/fig_errormap.png)
