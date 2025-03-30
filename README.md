@@ -21,7 +21,7 @@ equipped with a 9L4 linear array probe, operating within a frequency range of 4.
 resolution image capture.
 
 # Benchmark
-Performance comparative analysis of different network architectures for breast lesion segmentation in the MUB2025 dataset.
+Performance comparative analysis of different network architectures for breast lesion segmentation on the MUB2025 dataset.
 ![Visualization](./figures/fig_benchmark.png)
 
 
