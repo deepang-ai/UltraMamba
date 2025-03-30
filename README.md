@@ -1,4 +1,4 @@
-# UltraMamba: Mamba-based Multimodal Ultrasound Image Adaptive Fusion for Breast Tumor Segmentation
+# UltraMamba: Mamba-based Multimodal Ultrasound Image Adaptive Fusion for Breast Lesion Segmentation
 
 More details of this project will be released soon.
 
@@ -10,7 +10,7 @@ Dataset Name: MUB2024
 
 Modality: SWT, SWV, BUS
 
-Challenge: Breast Tumor Segmentation Challenge
+Challenge: Breast Lesion Segmentation Challenge
 
 The dataset will be publicly released within one week of paper acceptance.
 
