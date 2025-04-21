@@ -20,6 +20,8 @@ October 2016 and May 2023. This robust dataset employs a Siemens Acuson S2000 ul
 equipped with a 9L4 linear array probe, operating within a frequency range of 4.0MHz to 9.0MHz, to ensure high-
 resolution image capture.
 
+Data samples can be found in the folder ./data
+
 # Benchmark
 Performance comparative analysis of different network architectures for breast lesion segmentation on the MUB2025 dataset.
 ![Visualization](./figures/fig_benchmark.png)
