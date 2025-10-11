@@ -22,7 +22,9 @@ resolution image capture.
 
 Data samples can be found in the folder ./data
 
-
+# Benchmark
+Performance comparative analysis of different network architectures for breast lesion segmentation on the BreLS dataset.
+![Visualization](./figures/fig_benchmark.png)
 
 
 # Visualization
