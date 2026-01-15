@@ -1,0 +1,115 @@
+trainer:
+  num_epochs: 150
+  warmup: 5
+  train_ratio: 0.8
+  lr: 0.001
+  min_lr: 0.0000001
+  optimizer: adamw
+  weight_decay: 0.05
+  weight_decay_end: 0.04
+  pred_ratio_var: 0
+  resume: True
+  dataset_choose: Breast_US
+
+
+
+
+dataset:
+  Breast_US:
+    data_root: ./dataset/cv/seg/Breast-US/
+    train_root: ./dataset/cv/seg/Breast-CC/
+    test_root: ./dataset/cv/seg/Breast-SH/
+    recon_root: ./dataset/cv/recon/Breast-US/
+    dis_root: ./dataset/cv/dis/Breast-US/
+    batch_size: 8
+    num_workers: 4
+    image_size: 352
+    train_ratio: 0.8
+    modal_mask: []
+#    modal_mask: [TC, VC, VG]
+
+
+
+finetune:
+  model_choose: MusoMamba
+
+
+visualization:
+  img_path: "./visualization/img/"
+  mask_path: "./visualization/label/"
+  visualization_path: "./visualization/output/"
+
+
+models:
+  MusoMamba:
+    in_chans: 3
+    out_chans: 1
+    img_size: 352
+    feat_size: [48, 96, 192, 384, 768]
+    drop_path_rate: 0
+    deep_supervision: True
+    modal_num: 3
+    depths: [1, 1, 1, 1]
+    use_pretrain: False
+    model_dir: ./pretrained_model/vssmtiny_dp01_ckpt_epoch_292.pth
+
+  AttMamba:
+    in_chans: 3
+    out_chans: 1
+    img_size: 352
+    feat_size: [48, 96, 192, 384, 768]
+    drop_path_rate: 0
+    deep_supervision: True
+    modal_num: 3
+    depths: [1, 1, 1, 1]
+    use_pretrain: False
+    model_dir: ./pretrained_model/vssmtiny_dp01_ckpt_epoch_292.pth
+
+  mmFormer:
+    num_cls: 1
+
+  NestedFormer:
+    image_size: [352,352]
+    model_num: 3
+    out_channels: 1
+    window_size: [2, 2]
+  RFNet:
+    num_cls: 1
+
+  MAML:
+    modality_num: 3
+    base_num_features: 30
+    num_classes: 1
+    num_pool: 3
+    deep_supervision: True
+
+  RobustMseg:
+    num_cls: 1
+
+  MoSID:
+    num_cls: 1
+
+  MMCANET:
+    in_channels: 3
+    n_filters: 64
+    n_cls: 1
+
+  H2Aseg:
+    patch_size: [352,352]
+    in_channels: 3
+    n_classes: 2
+    num_channels: [8, 16, 32, 64, 128]
+    window_size: [8,8]
+
+  ASANet:
+    num_classes: 1
+
+  MMFFNet:
+    num_classes: 1
+
+shared path: /root/.cache/huggingface/forget/model_stores/
+
+
+
+
+
